@@ -1,0 +1,30 @@
+{
+  "name": "server",
+  "version": "1.0.0",
+  "description": "Server node js for diferents applications",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start":"node app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/BrayanJCP/server.git"
+  },
+  "keywords": [
+    "server",
+    "nodejs",
+    "angular",
+    "react"
+  ],
+  "author": "Brayan Corredor",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/BrayanJCP/server/issues"
+  },
+  "homepage": "https://github.com/BrayanJCP/server#readme",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "express": "^4.16.4"
+  }
+}
