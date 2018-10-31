@@ -9,3 +9,6 @@ var server=http.createServer(app);
 server.listen(3000,()=>{
     console.log('App listening');
 });
+server.on('listening',()=>{
+    console.log('App listening');
+});
