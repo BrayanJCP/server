@@ -4,10 +4,11 @@ var http = require('http');
 
 
 var app=express();
+app.set('port',3000);
+app.set('views', path.join(__dirname, 'frontend-react'));
 router.get('/',(req,res)=>{
     res.render('index', { title: 'Express' });
 });
-app.set('port',3000);
 var server=http.createServer(app);
 server.listen(3000,()=>{
     console.log('App listening');
