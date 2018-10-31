@@ -1,14 +1,12 @@
 var express=require('express');
-var router= express.Router();
 var http = require('http');
 
 
 var app=express();
 app.set('port',3000);
-app.set('frontend-react', path.join(__dirname, 'frontend-react'));
-router.get('/',(req,res)=>{
-    res.render('index', { title: 'Express' });
-});
+app.use(express.static('frontend-react'));
+
+
 var server=http.createServer(app);
 server.listen(3000,()=>{
     console.log('App listening');
