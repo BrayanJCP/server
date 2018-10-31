@@ -6,14 +6,12 @@ app.get('/',(req,res)=>{
     res.send('Funciona');
 });
 
-// var port = normalizePort(process.env.PORT || '3000');
-// app.set('port', port);
+var port = process.env.PORT || '3000';
+app.set('port', 3000);
 
 var server = http.createServer(app);
 
-server.listen(3000);
-// server.on('error', onError);
-// server.on('listening', onListening);
+server.listen(port);
 
 function normalizePort(val) {
   var port = parseInt(val, 10);
