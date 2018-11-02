@@ -4,8 +4,9 @@ var path=require('path');
 
 var port=process.env.PORT || 3000;
 var app=express();
+app.use(express.static('public'));
 app.get('/',(req,res)=>{
-    res.send('Servidor React');
+    res.sendFile(path.join('public', 'index.html'));
 });
 /*React */
 var pathreact=path.join(__dirname,'frontend-react/react-app/build');

@@ -1,0 +1,101 @@
+/*Colors*/
+:root{
+    --color1:#007F48;
+    --color2:#4CFFB1;
+    --color3:#00FF90;
+    --color4:#767F7C;
+    --color5:#00CC73;
+}
+*{
+    box-sizing: border-box;
+    font-family: 'Catamaran', sans-serif;
+}
+/* Text Color */
+.t-c1{color: var(--color1);}
+.t-c2{color: var(--color2);}
+.t-c3{color: var(--color3);}
+.t-c4{color: var(--color4);}
+.t-c5{color: var(--color5);}
+.t-w{color: white;}
+.t-b{color: black;}
+/* Backgound Color */
+.bg-c1{background-color: var(--color1);}
+.bg-c2{background-color: var(--color2);}
+.bg-c3{background-color: var(--color3);}
+.bg-c4{background-color: var(--color4);}
+.bg-c5{background-color: var(--color5);}
+.bg-w{background-color: white;}
+.bg-b{background-color: black;}
+/* Text align */
+.text-c{text-align: center;}
+.text-r{text-align: right;}
+.text-l{text-align: left;}
+/* padding */
+.p-1{padding: 5px;}
+.p-2{padding: 10px;}
+.p-3{padding: 15px;}
+/*Layout align*/
+.df-center{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+ul{padding: 0;}
+li{list-style: none;}
+/* Estilos Personalisados */
+body{
+    background-image: url('https://tecnovortex.com/wp-content/uploads/2014/11/wallpaper-negro.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    margin: 0;
+    height: 100vh;
+}
+.content-scroll{
+    max-height: 100vh;
+    max-width: 100vw;
+    overflow-y: auto;
+}
+.content-scroll section{
+    max-height: 400px;
+}
+/*Lista de cards con Img y descripcion*/
+.listCard{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 100%;
+    overflow-x: auto;
+}
+.listCard li{
+    min-width: 220px;
+    max-width: 220px;
+    background-color: var(--color1);
+    padding: 10px;
+    border:1px solid var(--color5);
+    margin: 10px;
+    text-align: center;
+    transform: scale(0.8,0.8);
+}
+.listCard li:hover{
+    transform: scale(1,1);
+}
+.listCard li img{
+    width:100%; 
+    height: 150px;
+}
+.listCard li p{
+    color: white;
+}
+.listCard li a{
+    text-decoration: none;
+}
+/*Articulos*/
+.article-1{
+    display: flex;
+    justify-content: space-between;
+}
+@media screen and (max-width:700px){
+    .article-1{
+        flex-direction:column-reverse;
+    }
+}
