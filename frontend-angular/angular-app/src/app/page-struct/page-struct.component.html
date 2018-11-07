@@ -1,0 +1,19 @@
+<!-- <header>
+  <button (click)="showMenu=!showMenu"></button>
+  <nav [ngClass]="showMenu?'active':'inactive'">
+    <ul>
+      <li routerLink="" (click)="showMenu=!showMenu"><a>Mesas</a></li>
+      <li routerLink="create" (click)="showMenu=!showMenu"><a>Crear Mesa</a></li>
+      <li routerLink="update" (click)="showMenu=!showMenu"><a>Actualizar Mesa</a></li>
+      <li routerLink="delete" (click)="showMenu=!showMenu"><a>Borrar Mesa</a></li>
+    </ul>
+  </nav>
+</header> -->
+<!-- <main [ngClass]="showMenu?'hideMenu':'showMenu'"> -->
+<main>
+  <router-outlet></router-outlet>
+</main>
+<!-- <footer [ngClass]="showMenu?'hideMenu':'showMenu'"> -->
+<footer>
+  <p>Proyecto mesas - Brayan Corredor</p>
+</footer>
