@@ -7,14 +7,14 @@ import { ReadComponent } from './modules/module1/read/read.component';
 import { CreateComponent } from './modules/module1/create/create.component';
 import { PageStructComponent } from './page-struct/page-struct.component';
 const appRoutes: Routes = [
-    { path:'table',component:PageStructComponent,children:[
+    { path:'angular/table',component:PageStructComponent,children:[
         { path: 'create', component: CreateComponent },
         { path: 'update/:id', component: UpdateComponent },
         { path: 'delete', component: DeleteComponent },
         { path: '', component: ReadComponent },
     ]},
     { path: '',
-      redirectTo: '/table',
+      redirectTo: '/angular/table',
       pathMatch: 'full'
     },
     { path: '**', component: NotFoundComponent }
@@ -24,7 +24,7 @@ const appRoutes: Routes = [
     imports: [
       RouterModule.forRoot(
         appRoutes,
-        { enableTracing: true, useHash:true } // <-- debugging purposes only
+        { enableTracing: true } // <-- debugging purposes only
       )
       // other imports here
     ],
