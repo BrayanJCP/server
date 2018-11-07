@@ -28,7 +28,7 @@ export class CreateComponent implements OnInit {
       color: [null, Validators.required],
       support: [null, Validators.required],
       material: [null, Validators.required],
-      price: [null, Validators.required],
+      price: [null, Validators.compose([Validators.required,Validators.pattern('[0-9]*')])],
       type: [null, Validators.required],
     });
   }

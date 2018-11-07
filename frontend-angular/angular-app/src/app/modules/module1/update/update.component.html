@@ -31,6 +31,7 @@
         <label for="precio-table">Precio</label>
         <input id="precio-table" type="text" formControlName="price">
         <span *ngIf="formTable.get('price').hasError('required') && this.formTable.get('price').touched">Campo requerido</span>
+        <span *ngIf="formTable.get('price').hasError('pattern') && this.formTable.get('price').touched">Solo números</span>
       </div>
       <div>
         <label for="tipo-table">Tipo</label>
