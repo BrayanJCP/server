@@ -20,6 +20,9 @@ app.use(express.static(pathangular));
 app.get('/angular', function(req, res) {
     res.sendFile(path.join(pathangular, 'index.html'));
   });
+  app.get('/#', function(req, res) {
+    res.sendFile(path.join(pathangular, 'index.html'));
+  });
 /*Inicio del servidor */
 var server=http.createServer(app);
 server.listen(port,()=>{

@@ -31,7 +31,7 @@ export class UpdateComponent implements OnInit {
       color:[table.color,Validators.required],
       support:[table.soportes,Validators.required],
       material:[table.material,Validators.required],
-      price: [null, Validators.compose([Validators.required,Validators.pattern('[0-9]*')])],
+      price: [table.precio, Validators.compose([Validators.required,Validators.pattern('[0-9]*')])],
       type:[table.tipo,Validators.required],
     });
   }
