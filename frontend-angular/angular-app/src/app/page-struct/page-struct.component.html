@@ -1,19 +1,26 @@
-<!-- <header>
+<header>
   <button (click)="showMenu=!showMenu"></button>
   <nav [ngClass]="showMenu?'active':'inactive'">
+    <div class="image">
+      <div>
+        <img id="imagen_usuario" src="" alt="">
+      </div>
+      <span>{{nombre_usuario}}</span>
+    </div>
     <ul>
-      <li routerLink="" (click)="showMenu=!showMenu"><a>Mesas</a></li>
-      <li routerLink="create" (click)="showMenu=!showMenu"><a>Crear Mesa</a></li>
-      <li routerLink="update" (click)="showMenu=!showMenu"><a>Actualizar Mesa</a></li>
-      <li routerLink="delete" (click)="showMenu=!showMenu"><a>Borrar Mesa</a></li>
+      <li routerLink="/table" (click)="showMenu=!showMenu"><a>Mesas</a></li>
+      <li routerLink="/chair" (click)="showMenu=!showMenu"><a>Sillas</a></li>
+      <li routerLink="/login"><a>Salir</a></li>
     </ul>
   </nav>
-</header> -->
-<!-- <main [ngClass]="showMenu?'hideMenu':'showMenu'"> -->
-<main>
-  <router-outlet></router-outlet>
-</main>
-<!-- <footer [ngClass]="showMenu?'hideMenu':'showMenu'"> -->
-<footer>
-  <p>Proyecto mesas - Brayan Corredor</p>
-</footer>
+</header>
+<div class="content-general">
+    <main [ngClass]="showMenu?'hideMenu':'showMenu'">
+        <router-outlet></router-outlet>
+      </main>
+      <footer [ngClass]="showMenu?'hideMenu':'showMenu'">
+        <p>Proyecto Angular - Brayan Corredor</p>
+        <p><a href="">Inicio</a></p>
+      </footer>
+</div>
+

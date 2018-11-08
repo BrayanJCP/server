@@ -1,0 +1,14 @@
+<div class="content-login">
+  <div>
+    <h1>Login</h1>
+    <p></p>
+    <div class="image">
+        <img id="image_user" src="https://image.flaticon.com/icons/png/512/50/50050.png" alt="user">
+        <input type="file" (change)="ChangeImage($event)">
+    </div>
+    <div>
+      <label for="nameSession"></label>
+      <input id="nameSession" type="text" [(ngModel)]="nombre_usuario"></div>
+    <button (click)="accesApp()">Ingresar</button>
+  </div>
+</div>

@@ -1,6 +1,6 @@
-export class Table{
+export class Chair{
     constructor(
-        public name,
+    public name:string,
     public color:string,
     public soportes:number,
     public material:string,

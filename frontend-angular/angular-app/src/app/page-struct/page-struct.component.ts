@@ -7,9 +7,17 @@ import { Component, OnInit } from '@angular/core';
 })
 export class PageStructComponent implements OnInit {
   showMenu=false;
-  constructor() { }
+  nombre_usuario;
+  usuario;
+  constructor() {
+    this.usuario=JSON.parse(atob(sessionStorage.getItem('id')));
+    this.nombre_usuario=this.usuario['name']
+   }
 
   ngOnInit() {
+
+    let img=document.getElementById('imagen_usuario');
+    img.setAttribute('src',this.usuario['img']);
   }
 
 }

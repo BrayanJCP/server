@@ -1,0 +1,16 @@
+<div class="content-read">
+  <h2>Sillas</h2>
+  <span class="material-icons" routerLink="create">add_circle_outline</span>
+  <ul class="list-tables">
+    <li *ngFor='let table of listtables;let i=index'>
+      <div>
+        <h4>{{table.name}}</h4>
+        <span>{{table.precio}}</span>
+        <p>{{table.material}} {{table.color}}</p>
+        <p>{{table.tipo}} {{table.soportes}}</p>
+        <span class="material-icons create" [routerLink]="['update', i]">create</span>
+        <span class="material-icons delete" (click)="DeleteTable(i)">delete</span>
+      </div>
+    </li>
+  </ul>
+</div>

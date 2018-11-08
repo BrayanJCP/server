@@ -19,13 +19,12 @@ app.get('/react', function(req, res) {
 /*Angular */
 var pathangular=path.join(__dirname,'frontend-angular/angular-app/dist/angular-app');
 app.use(express.static(pathangular));
-app.use('/angular',express.static('frontend-angular/angular-app/dist/angular-app'));
-// app.get('/angular', function(req, res) {
-//     res.sendFile(path.join(pathangular, 'index.html'));
-//   });
-//   app.get('#/table', function(req, res) {
-//     res.sendFile(path.join(pathangular, 'index.html'));
-//   });
+app.get('/angular', function(req, res) {
+    res.sendFile(path.join(pathangular, 'index.html'));
+  });
+app.all('/#/table', function(req, res) {
+    res.sendFile(path.join(pathangular, 'index.html'));
+  });
 /*Inicio del servidor */
 var server=http.createServer(app);
 server.listen(port,()=>{

@@ -11,6 +11,9 @@ import { PageStructComponent } from './page-struct/page-struct.component';
 import { RouterModule } from '@angular/router';
 import { AppRouting } from './app-routing.module';
 import { FormsModule,ReactiveFormsModule } from '@angular/forms';
+import { LoginComponent } from './modules/modulelogin/login/login.component';
+import { Create2Component } from './modules/module2/create2/create2.component';
+import { Read2Component } from './modules/module2/read2/read2.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +23,10 @@ import { FormsModule,ReactiveFormsModule } from '@angular/forms';
     ReadComponent,
     DeleteComponent,
     NotFoundComponent,
-    PageStructComponent
+    PageStructComponent,
+    LoginComponent,
+    Create2Component,
+    Read2Component
   ],
   imports: [
     BrowserModule,

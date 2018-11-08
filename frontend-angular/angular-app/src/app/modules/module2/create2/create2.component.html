@@ -1,0 +1,45 @@
+<div class="content-create">
+  <h2>Registra una silla</h2>
+  <form [formGroup]="formTable" (ngSubmit)="Submit()">
+    <div>
+      <label for="nombre-table">Nombre</label>
+      <input id="nombre-table" type="text" formControlName="name">
+      <span *ngIf="formTable.get('name').hasError('required') && this.formTable.get('name').touched">Campo requerido</span>
+    </div>
+    <div>
+      <label for="color-table">Color</label>
+      <select id="color-table" formControlName="color">
+        <option *ngFor="let item of colors;" value="{{item}}">{{item}}</option>
+      </select>
+      <span *ngIf="formTable.get('color').hasError('required') && this.formTable.get('color').touched">Campo requerido</span>
+    </div>
+    <div>
+      <label for="soportes-table">Soportes</label>
+      <select id="soportes-table" formControlName="support">
+        <option *ngFor="let item of supports;" value="{{item}}">{{item}}</option>
+      </select>
+      <span *ngIf="formTable.get('support').hasError('required') && this.formTable.get('support').touched">Campo requerido</span>
+    </div>
+    <div>
+      <label for="material-table">Material</label>
+      <select id="material-table" formControlName="material">
+        <option *ngFor="let item of materials;" value="{{item}}">{{item}}</option>
+      </select>
+      <span *ngIf="formTable.get('material').hasError('required') && this.formTable.get('material').touched">Campo requerido</span>
+    </div>
+    <div>
+      <label for="precio-table">Precio</label>
+      <input id="precio-table" type="text" formControlName="price">
+      <span *ngIf="formTable.get('price').hasError('required') && this.formTable.get('price').touched">Campo requerido</span>
+      <span *ngIf="formTable.get('price').hasError('pattern') && this.formTable.get('price').touched">Solo números</span>
+    </div>
+    <div>
+      <label for="tipo-table">Tipo</label>
+      <select id="tipo-table" formControlName="type">
+        <option *ngFor="let item of types;" value="{{item}}">{{item}}</option>
+      </select>
+      <span *ngIf="formTable.get('type').hasError('required') && this.formTable.get('type').touched">Campo requerido</span>
+    </div>
+    <button [disabled]="formTable.invalid">Crear</button>
+  </form>
+</div>

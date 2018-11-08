@@ -8,7 +8,6 @@ import { Util } from 'src/app/shared/util';
 })
 export class ReadComponent implements OnInit {
   public listtables=Util.listTables;
-  private showCreate=false;
   constructor() { }
 
   ngOnInit() {
