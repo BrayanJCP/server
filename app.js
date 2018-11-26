@@ -16,6 +16,12 @@ app.get('/react', function(req, res) {
   console.log('Entro react');
     res.sendFile(path.join(pathreact, 'index.html'));
   });
+var pathreact1=path.join(__dirname,'frontend-react/cv/build');
+app.use(express.static(pathreact1));
+app.get('/cv', function(req, res) {
+  console.log('Entro react');
+    res.sendFile(path.join(pathreact1, 'index.html'));
+  });
 /*Angular */
 var pathangular=path.join(__dirname,'frontend-angular/angular-app/dist/angular-app');
 app.use(express.static(pathangular));

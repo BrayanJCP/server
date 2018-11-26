@@ -3,6 +3,8 @@
 # dependencies Project React
 /frontend-react/react-app/node_modules
 /frontend-react/react-app/.pnp
+/frontend-react/cv/node_modules
+/frontend-react/cv/.pnp
 .pnp.js
 
 # testing
