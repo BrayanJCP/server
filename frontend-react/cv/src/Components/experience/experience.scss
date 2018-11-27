@@ -1,0 +1,19 @@
+@import "../../index.scss";
+.listExperience{
+    padding: 0;
+    text-align: left;
+    li{
+        list-style: none;
+        margin: 15px;
+    }
+}
+.content-experience{
+    padding: 10px 10px 10px 30px;
+    h2{
+        background-color:$color1;
+        color: white;
+        padding:0 10px;
+        text-transform: uppercase;
+        text-align: left;
+    }
+}

@@ -1,3 +1,10 @@
+/*Color*/
+$color1:#092E7F;
+$color2:#5F91FF;
+$color3:#135CFF;
+$color4:#30487F;
+$color5:#0F49CC;
+/*Styles*/
 body {
   margin: 0;
   padding: 0;
@@ -6,6 +13,8 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: white;
+  position: relative;
 }
 
 code {

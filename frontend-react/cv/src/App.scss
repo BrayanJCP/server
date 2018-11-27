@@ -1,0 +1,74 @@
+@import 'index.scss';
+.App {
+  text-align: center;
+}
+.App-header {
+  margin-top: 10px;
+  background-color:$color1;
+  min-height: 20vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  h3{
+    font-size: 40px;
+    margin: 0;
+    font-weight: 400;
+  }
+  p{
+    margin: 5px 0;
+    color: $color2;
+  }
+}
+.personalInformation{
+  position: fixed;
+  left: 20px;
+  background-image: linear-gradient(to top,$color4, $color2);
+  top:-10px;
+  bottom: 0;
+  width: 18vw;
+  color: white;
+  padding: 10px;
+  img{
+    max-height: 100px;
+    border-radius: 50%;
+    border:5px solid $color4;
+    margin-bottom: 5px;
+  }
+  >span{
+    background-color: $color1;
+    display: block;
+    padding: 5px;
+    text-align: center;
+    margin: 10px 0;
+  }
+  p{
+    text-align: left;
+    font-size: 14px;
+  }
+  .liAbilities{
+    div{
+      position: relative;
+      label{
+        display: block;
+        text-align: left;
+        border-bottom: 2px solid white;
+        padding-bottom: 10px;
+        margin-bottom: 10px;
+      }
+      span{
+        padding: 5px;
+        position: absolute;
+        background-color: white;
+        bottom: -6px;
+        border:2px solid $color1;
+        border-radius: 50%;
+      }
+    }
+  }
+}
+.contentInformation{
+  margin-left: 20vw;
+}
+
