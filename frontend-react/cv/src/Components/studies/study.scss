@@ -9,6 +9,9 @@
 }
 .content-study{
     padding: 10px 10px 10px 30px;
+    @media screen and (max-width:840px){
+        padding: 10px;
+      }
     h2{
         background-color:$color1;
         color: white;
