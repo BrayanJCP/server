@@ -18,7 +18,12 @@ class Experience extends React.Component {
             {
               name: "Stefanini Informatica y tecnologia-(Cliente Azteca)",
               description: "Desarrollador Front-end, maquetacion de interfaz grafica Web para una aplicacion creada en .Net MVC 4, apoyo para creacion de Activities en Android.",
-              date: "Sep 2018 - Actualmente"
+              date: "Sep 2018 - Sep 2019"
+            },
+            {
+              name: "Pragma S.A",
+              description: "Desarrollo de aplicaciones web con Angular 4+. Manejo de modulos y componentes. Manejo de micro-frontends con docker, nginx, angular. He trabajado con jenkins para despliegues. Trabajó bajo metodología agil. Colaboro en la creación o soporte de apis en proyectos de Java ya implementados. Base de datos DynamoDB. Versionamiento de código en git (GitLab, GitHub, Bitbucket...)", 
+              date: "Sep 2019 - Actualmente"
             },
           ]
         this.listItems = experiences.map((item) =>
