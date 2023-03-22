@@ -29,9 +29,9 @@ class Experience extends React.Component {
         this.listItems = experiences.map((item) =>
                 <li key={item.name}>
                     <div>
-                        <h4>{item.name}</h4>
+                        <h3>{item.name}</h3>
                         <p>{item.description}</p>
-                        <p><b>{item.date}</b></p>
+                        <p>* {item.date}</p>
                     </div>
                 </li>
             );

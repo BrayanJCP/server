@@ -36,7 +36,7 @@ class Study extends React.Component {
                     <div>
                         <h4>{item.title}</h4>
                         <p>{item.institution}</p>
-                        <p><b>{item.date}</b></p>
+                        <p>* {item.date}</p>
                     </div>
                 </li>
             );
@@ -45,7 +45,7 @@ class Study extends React.Component {
                     <div>
                         <h4>{item.title}</h4>
                         <p>{item.institution}</p>
-                        <p><b>{item.date}</b></p>
+                        <p>* {item.date}</p>
                     </div>
                 </li>
             );
