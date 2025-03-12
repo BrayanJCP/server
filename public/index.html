@@ -11,69 +11,217 @@
 </head>
 
 <body>
-    <div class="content-scroll">
-        <section class="text-c">
-            <div class="df-center">
-                <div class="t-w p-2">
-                    <h1 class="t-c5">Portafolio</h1>
-                    <p>Hola mi nombre es Brayan Corredor y quiero que conozcas un poco de mi trabajo</p>
-                </div>
+    <section class="hero">
+        <div class="hero-content">
+            <img src="./profile.jpg" alt="Profile Picture" class="profile-image">
+            <div class="hero-text">
+                <h2>FullStack Developer Angular/ Java - Node </h2>
+                <p>Hola mi nombre es Brayan Corredor y quiero que conozcas un poco de mi trabajo</p>
+                <p>Soy Ingeniero de Sistemas egresado de la Universidad Distrital Francisco Jose de Caldas, enfocado al
+                    desarrollo de software(Front-End), utilizando Html5, Css3, JavaScript, Angular 4+, React,con buen
+                    manejo en la creación de componentes en Javascript y Angular, creación de maquetas en html5 y css3
+                    basado en los diseños establecidos, trabajo bajo la metodología Scrum, manejo el versionamiento de
+                    aplicaciones con git. Soy comprometido con las tareas establecidos y tengo buena comunicación para
+                    trabajar en equipo.</p>
+                <small>Quieres saber más, conoce mi <a href="/cv">Hoja de vida</a></small>
             </div>
-        </section>
-        <section class="bg-w">
-            <article class="article-2">
-                <img src="./profile.jpg" alt="Profile Image">
-                <div class="p-3">
-                    <h3 class="t-c5">Brayan Julian Corredor Puentes</h3>
-                    <p>Soy Ingeniero de Sistemas egresado de la Universidad Distrital Francisco Jose de Caldas, enfocado al desarrollo de software(Front-End), utilizando Html5, Css3, JavaScript, Angular 4+, React,con buen manejo en la creación de componentes en Javascript y Angular, creación de maquetas en html5 y css3 basado en los diseños establecidos, trabajo bajo la metodología Scrum, manejo el versionamiento de aplicaciones con git. Soy comprometido con las tareas establecidos y tengo buena comunicación para trabajar en equipo.</p>
-                    <small>Quieres saber más, conoce mi <a href="/cv">Hoja de vida</a></small>
-                </div>
-            </article>
-        </section>
-        <section>
-            <div class="p-3">
-                <h2 class="t-c5 text-c">Proyectos ejemplo</h2>
-                <ul class="listCard">
-                    <!-- <li>
-                        <a href="/react">
-                            <img src="https://cdn-images-1.medium.com/max/679/1*qUlxDdY3T-rDtJ4LhLGkEg.png" alt="React">
-                            <p>Proyecto Ejemplo React</p>
-                        </a>
-                    </li> -->
-                    <li>
+        </div>
+    </section>
+
+    <section class="projects">
+        <h2 class="section-title">Mis Proyectos</h2>
+        <div class="projects-grid">
+            <div class="project-card">
+                <img class="project-image"
+                    src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/cf/Angular_full_color_logo.svg/1200px-Angular_full_color_logo.svg.png"
+                    alt="Angular">
+                <div class="project-info">
+                    <h3>Gestion de inventarios</h3>
+                    <p>Proyecto ejemplo de inventario con referencia a muebles
                         <a href="/angular">
-                            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/cf/Angular_full_color_logo.svg/1200px-Angular_full_color_logo.svg.png"
-                                alt="Angular">
                             <p>Proyecto Ejemplo Angular</p>
                         </a>
+                    </p>
+                </div>
+            </div>
+            <!-- <div class="project-card">
+                <img src="project2.jpg" alt="Project 2" class="project-image">
+                <div class="project-info">
+                    <h3>Project Name 2</h3>
+                    <p>Description of your second project. Explain what you did and what technologies you used.</p>
+                </div>
+            </div> -->
+        </div>
+    </section>
+
+    <section class="skills">
+        <h2 class="section-title">Technical Skills</h2>
+        <div class="skills-container">
+            <div class="skills-grid">
+                <div class="skill-category">
+                    <h3>Frontend Development</h3>
+                    <ul class="skill-list">
+                        <li>HTML5</li>
+                        <li>CSS3</li>
+                        <li>JavaScript</li>
+                        <li>React</li>
+                        <li>Angular J.S</li>
+                    </ul>
+                </div>
+                <div class="skill-category">
+                    <h3>UI/UX Design</h3>
+                    <ul class="skill-list">
+                        <li>Responsive Design</li>
+                        <li>CSS Grid</li>
+                        <li>Flexbox</li>
+                        <li>SASS/SCSS</li>
+                    </ul>
+                </div>
+                <div class="skill-category">
+                    <h3>Tools & Others</h3>
+                    <ul class="skill-list">
+                        <li>Git</li>
+                        <li>npm</li>
+                        <li>VS Code</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="bg-w projects">
+        <article class="article-1">
+            <div class="p-3">
+                <h3 class="t-c5">Desarrollar Front-End (Web)</h3>
+                <p>Para adquirir los conocimientos básicos de un desarrollador front-end se debe tener claro los
+                    conceptos de html, css y javascript:</p>
+                <ul>
+                    <li>
+                        <p><b><a href="https://developer.mozilla.org/es/docs/Web/HTML" target="blank">HTML:</a>
+                            </b>HyperText Markup Language (lenguaje de marcas de hipertexto). Básicamente es un
+                            documento web (.html), el cual contiene una serie de etiquetas que reconocen los
+                            navegadores(Chrome, Firefox, Internet Explorer, entre otros) para organizar la
+                            información(Por lo general son textos e imagenes).</p>
+                    </li>
+                    <li>
+                        <p><b><a href="https://www.w3.org/Style/CSS/Overview.en.html" target="blank">CSS:</a></b> es
+                            un mecanismo simple para añadir estilos a un documento web(HTML o XML).</p>
+                    </li>
+                    <li>
+                        <p><b><a href="https://developer.mozilla.org/es/docs/Web/JavaScript"
+                                    target="blank">Javascript:</a></b> Es un lenguaje de programación que permite
+                            hacer el procesamiento de la información.</p>
                     </li>
                 </ul>
+                <small>Puedes conocer las palabras reservadas de cada item en <a
+                        href="https://www.w3schools.com/">w3schools</a></small>
             </div>
-        </section>
-        <section class="bg-w">
-            <article class="article-1">
-                <div class="p-3">
-                    <h3 class="t-c5">Desarrollar Front-End (Web)</h1>
-                        <p>Para adquirir los conocimientos básicos de un desarrollador front-end se debe tener claro los conceptos de html, css y javascript:</p>
+            <img src="http://blog.embluemail.com/wp-content/uploads/2018/02/diseniook-750x422.png" alt="html5">
+        </article>
+        <article class="article-1">
+            <div class="p-3">
+                <h3 class="t-c5">Patrones de diseño</h3>
+                <p>Los patrones de diseño son soluciones reutilizables a problemas comunes que surgen durante el diseño
+                    y
+                    desarrollo de software.
+                    Representan buenas prácticas desarrolladas para aplicarse en diferentes proyectos. Se pueden
+                    utilizar
+                    estos patrones como guías
+                    para resolver problemas específicos de manera eficiente y estructurada.</p>
+                <div class="patrones-container">
+                    <div class="patron-grupo">
+                        <h3 class="t-c5">Patrones Creacionales</h3>
                         <ul>
-                            <li>
-                                <p><b><a href="https://developer.mozilla.org/es/docs/Web/HTML" target="blank">HTML:</a> </b>HyperText Markup Language (lenguaje de marcas de hipertexto). Básicamente es un documento web (.html), el cual contiene una serie de etiquetas que reconocen los navegadores(Chrome, Firefox, Internet Explorer, entre otros) para organizar la información(Por lo general son textos e imagenes).</p>
-                            </li>
-                            <li>
-                                <p><b><a href="https://www.w3.org/Style/CSS/Overview.en.html" target="blank">CSS:</a></b> es un mecanismo simple para añadir estilos a un documento web(HTML o XML).</p>
-                            </li>
-                            <li>
-                                <p><b><a href="https://developer.mozilla.org/es/docs/Web/JavaScript" target="blank">Javascript:</a></b> Es un lenguaje de programación que permite hacer el procesamiento de la información.</p>
-                            </li>
+                            <li><span class="patron-nombre tc-5 text-l">Abstract Factory:</span> <span
+                                    class="patron-descripcion">Crea
+                                    familias de objetos relacionados sin especificar clases concretas.</span></li>
+                            <li><span class="patron-nombre tc-5 text-l">Builder:</span> <span
+                                    class="patron-descripcion">Construye
+                                    objetos complejos con representaciones diferentes.</span></li>
+                            <li><span class="patron-nombre tc-5 text-l">Factory Method:</span> <span
+                                    class="patron-descripcion">Define
+                                    interfaz para crear objetos, subclases deciden instanciación.</span></li>
+                            <li><span class="patron-nombre tc-5 text-l">Prototype:</span> <span
+                                    class="patron-descripcion">Crea objetos
+                                    copiando un prototipo existente.</span></li>
+                            <li><span class="patron-nombre tc-5 text-l">Singleton:</span> <span
+                                    class="patron-descripcion">Asegura una
+                                    única instancia de una clase.</span></li>
                         </ul>
-                        <small>Puedes conocer las palabras reservadas de cada item en <a href="https://www.w3schools.com/">w3schools</a></small>
+                    </div>
+
+                    <div class="patron-grupo">
+                        <h3 class="t-c5">Patrones Estructurales</h3>
+                        <ul>
+                            <li><span class="patron-nombre tc-5 text-l">Adapter:</span> <span
+                                    class="patron-descripcion">Permite que
+                                    interfaces incompatibles trabajen juntas.</span></li>
+                            <li><span class="patron-nombre tc-5 text-l">Bridge:</span> <span
+                                    class="patron-descripcion">Desacopla
+                                    abstracción de implementación para variar independientemente.</span></li>
+                            <li><span class="patron-nombre tc-5 text-l">Composite:</span> <span
+                                    class="patron-descripcion">Crea
+                                    estructuras de árbol para jerarquías parte-todo.</span></li>
+                            <li><span class="patron-nombre tc-5 text-l">Decorator:</span> <span
+                                    class="patron-descripcion">Añade
+                                    responsabilidades dinámicamente a un objeto.</span></li>
+                            <li><span class="patron-nombre tc-5 text-l">Facade:</span> <span
+                                    class="patron-descripcion">Proporciona
+                                    interfaz unificada a un subsistema.</span></li>
+                            <li><span class="patron-nombre tc-5 text-l">Flyweight:</span> <span
+                                    class="patron-descripcion">Comparte
+                                    objetos para soportar grandes cantidades eficientemente.</span></li>
+                            <li><span class="patron-nombre tc-5 text-l">Proxy:</span> <span
+                                    class="patron-descripcion">Controla el
+                                    acceso a otro objeto.</span></li>
+                        </ul>
+                    </div>
+
+                    <div class="patron-grupo">
+                        <h3 class="t-c5">Patrones de Comportamiento</h3>
+                        <ul>
+                            <li><span class="patron-nombre tc-5 text-l">Chain of Responsibility:</span> <span
+                                    class="patron-descripcion">Pasa solicitudes a través de una cadena de
+                                    objetos.</span>
+                            </li>
+                            <li><span class="patron-nombre tc-5 text-l">Command:</span> <span
+                                    class="patron-descripcion">Encapsula una
+                                    solicitud como un objeto.</span></li>
+                            <li><span class="patron-nombre tc-5 text-l">Interpreter:</span> <span
+                                    class="patron-descripcion">Define
+                                    representación para la gramática de un lenguaje.</span></li>
+                            <li><span class="patron-nombre tc-5 text-l">Iterator:</span> <span
+                                    class="patron-descripcion">Accede
+                                    secuencialmente a elementos de un objeto agregado.</span></li>
+                            <li><span class="patron-nombre tc-5 text-l">Mediator:</span> <span
+                                    class="patron-descripcion">Define cómo
+                                    interactúan un conjunto de objetos.</span></li>
+                            <li><span class="patron-nombre tc-5 text-l">Memento:</span> <span
+                                    class="patron-descripcion">Captura y
+                                    restaura el estado interno de un objeto.</span></li>
+                            <li><span class="patron-nombre tc-5 text-l">Observer:</span> <span
+                                    class="patron-descripcion">Define
+                                    dependencia uno-a-muchos entre objetos.</span></li>
+                            <li><span class="patron-nombre tc-5 text-l">State:</span> <span
+                                    class="patron-descripcion">Altera
+                                    comportamiento de un objeto según su estado interno.</span></li>
+                            <li><span class="patron-nombre tc-5 text-l">Strategy:</span> <span
+                                    class="patron-descripcion">Define familia
+                                    de algoritmos intercambiables.</span></li>
+                            <li><span class="patron-nombre tc-5 text-l">Template Method:</span> <span
+                                    class="patron-descripcion">Define
+                                    esqueleto de algoritmo, subclases implementan pasos.</span></li>
+                            <li><span class="patron-nombre tc-5 text-l">Visitor:</span> <span
+                                    class="patron-descripcion">Define nueva
+                                    operación sin modificar clases de objetos.</span></li>
+                        </ul>
+                    </div>
                 </div>
-                <img src="http://blog.embluemail.com/wp-content/uploads/2018/02/diseniook-750x422.png"
-                    alt="html5">
-            </article>
-        </section>
-        <section></section>
-    </div>
+                <p>Fuente de referencia: <a href="https://platzi.com/blog/patrones-de-diseno/">¿Qué son los patrones de
+                        diseño? Conoce para qué te sirven</a></p>
+            </div>
+            <img src="https://img.itmastersmag.com/wp-content/uploads/2023/10/29095039/Captura-de-pantalla-2024-11-29-a-las-9.49.50-1-1920x960.jpg" alt="patrones de diseño">
+        </article>
+    </section>
 </body>
 
 </html>
